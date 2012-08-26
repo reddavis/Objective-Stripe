@@ -12,6 +12,11 @@
 #import "STRCharge.h"
 
 
+@interface STRStripeHTTPClient ()
+
+@end
+
+
 static NSString *kSTRStripeAPIKey = nil;
 static NSString *const kSTRStripeBaseURL = @"https://api.stripe.com/v1/";
 static NSString *const KSTRGetCustomersPath = @"customers";
@@ -77,9 +82,8 @@ static NSString *const KSTRGetChargesRootPath = @"charges";
 
 #pragma mark - Charges
 
-- (void)fetchAllChargesForCustomerWithID:(NSString *)customerID success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure {
+- (void)fetchChargesWithParams:(NSDictionary *)params success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure {
     
-    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:customerID, @"customer", nil];
     [self getPath:KSTRGetChargesRootPath parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSError *JSONReadingError = nil;
@@ -94,6 +98,29 @@ static NSString *const KSTRGetChargesRootPath = @"charges";
         
         success([NSArray arrayWithArray:charges]);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        failure(error);
+    }];
+}
+
+- (void)fetchAllCharges:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure {
+    
+    [self fetchChargesWithParams:nil success:^(NSArray *charges) {
+        
+        success(charges);
+    } failure:^(NSError *error) {
+       
+        failure(error);
+    }];
+}
+
+- (void)fetchAllChargesForCustomerWithID:(NSString *)customerID success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure {
+    
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:customerID, @"customer", nil];
+    [self fetchChargesWithParams:params success:^(NSArray *charges) {
+        
+        success(charges);
+    } failure:^(NSError *error) {
         
         failure(error);
     }];

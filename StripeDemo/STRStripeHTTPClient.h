@@ -16,7 +16,12 @@
 + (STRStripeHTTPClient *)sharedClient;
 + (void)setAPIKey:(NSString *)APIkey;
 
+// Customers
 - (void)fetchAllCustomers:(void(^)(NSArray *customers))success failure:(void(^)(NSError *error))failure;
+
+// Charges
+- (void)fetchChargesWithParams:(NSDictionary *)params success:(void (^)(NSArray *charges))success failure:(void (^)(NSError *error))failure;
+- (void)fetchAllCharges:(void(^)(NSArray *charges))success failure:(void(^)(NSError *error))failure;
 - (void)fetchAllChargesForCustomerWithID:(NSString *)customerID success:(void(^)(NSArray *charges))success failure:(void(^)(NSError *error))failure;
 - (void)createCharge:(NSNumber *)amount forCustomerWithID:(NSString *)customerID details:(NSString *)details success:(void(^)(STRCharge *charge))success failure:(void(^)(NSError *error))failure;
 

@@ -1,4 +1,4 @@
-# Stripe Wrapper
+# Objective Stripe
 
 ## Overview
 
