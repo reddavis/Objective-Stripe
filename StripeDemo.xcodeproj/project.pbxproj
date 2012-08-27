@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		562BF1A7781C4176AA5788F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF13FB23C59040ADBB3B824E /* libPods.a */; };
 		A473E2DD15E919DB00F2B4AF /* STRCustomersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E2DB15E919DB00F2B4AF /* STRCustomersViewController.m */; };
 		A473E2DE15E919DB00F2B4AF /* STRCustomersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A473E2DC15E919DB00F2B4AF /* STRCustomersViewController.xib */; };
 		A473E2E315E9293E00F2B4AF /* STRLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E2E215E9293E00F2B4AF /* STRLoadingView.m */; };
@@ -16,20 +17,11 @@
 		A473E2F715E9546200F2B4AF /* STRNewCustomerChargeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A473E2F515E9546200F2B4AF /* STRNewCustomerChargeViewController.xib */; };
 		A473E2F915E960A200F2B4AF /* StripePublishableKey in Resources */ = {isa = PBXBuildFile; fileRef = A473E2F815E960A200F2B4AF /* StripePublishableKey */; };
 		A473E2FB15E9622C00F2B4AF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A473E2FA15E9622C00F2B4AF /* README.md */; };
-		A473E30D15EA928800F2B4AF /* STRStripeHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E30C15EA928800F2B4AF /* STRStripeHTTPClient.m */; };
-		A473E31115EA929700F2B4AF /* STRCharge.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E31015EA929700F2B4AF /* STRCharge.m */; };
-		A473E31415EA92B000F2B4AF /* STRCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E31315EA92B000F2B4AF /* STRCard.m */; };
-		A473E31715EA92BF00F2B4AF /* STRCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E31615EA92BF00F2B4AF /* STRCustomer.m */; };
-		A473E32E15EA92DF00F2B4AF /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E31A15EA92DF00F2B4AF /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A473E32F15EA92DF00F2B4AF /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E31C15EA92DF00F2B4AF /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A473E33015EA92DF00F2B4AF /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E31E15EA92DF00F2B4AF /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A473E33115EA92DF00F2B4AF /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E32015EA92DF00F2B4AF /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A473E33215EA92DF00F2B4AF /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E32215EA92DF00F2B4AF /* AFJSONUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A473E33315EA92DF00F2B4AF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E32415EA92DF00F2B4AF /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A473E33415EA92DF00F2B4AF /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E32715EA92DF00F2B4AF /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A473E33515EA92DF00F2B4AF /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E32915EA92DF00F2B4AF /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A473E33615EA92DF00F2B4AF /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E32B15EA92DF00F2B4AF /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A473E33715EA92DF00F2B4AF /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E32D15EA92DF00F2B4AF /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A473E37615EB906D00F2B4AF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A473E36D15EB906D00F2B4AF /* LICENSE */; };
+		A473E37715EB906D00F2B4AF /* STRCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E36F15EB906D00F2B4AF /* STRCard.m */; };
+		A473E37815EB906D00F2B4AF /* STRCharge.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E37115EB906D00F2B4AF /* STRCharge.m */; };
+		A473E37915EB906D00F2B4AF /* STRCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E37315EB906D00F2B4AF /* STRCustomer.m */; };
+		A473E37A15EB906D00F2B4AF /* STRStripeHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A473E37515EB906D00F2B4AF /* STRStripeHTTPClient.m */; };
 		A482DA4115E8E055004ED689 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A482DA4015E8E055004ED689 /* UIKit.framework */; };
 		A482DA4315E8E055004ED689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A482DA4215E8E055004ED689 /* Foundation.framework */; };
 		A482DA4515E8E055004ED689 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A482DA4415E8E055004ED689 /* CoreGraphics.framework */; };
@@ -39,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B6660A721D04F8B9FB13A32 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		A473E2DA15E919DB00F2B4AF /* STRCustomersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRCustomersViewController.h; sourceTree = "<group>"; };
 		A473E2DB15E919DB00F2B4AF /* STRCustomersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRCustomersViewController.m; sourceTree = "<group>"; };
 		A473E2DC15E919DB00F2B4AF /* STRCustomersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STRCustomersViewController.xib; sourceTree = "<group>"; };
@@ -52,45 +45,26 @@
 		A473E2F515E9546200F2B4AF /* STRNewCustomerChargeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STRNewCustomerChargeViewController.xib; sourceTree = "<group>"; };
 		A473E2F815E960A200F2B4AF /* StripePublishableKey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StripePublishableKey; sourceTree = "<group>"; };
 		A473E2FA15E9622C00F2B4AF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		A473E30B15EA928800F2B4AF /* STRStripeHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STRStripeHTTPClient.h; path = Stripe/STRStripeHTTPClient.h; sourceTree = "<group>"; };
-		A473E30C15EA928800F2B4AF /* STRStripeHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STRStripeHTTPClient.m; path = Stripe/STRStripeHTTPClient.m; sourceTree = "<group>"; };
-		A473E30F15EA929700F2B4AF /* STRCharge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STRCharge.h; path = Stripe/STRCharge.h; sourceTree = "<group>"; };
-		A473E31015EA929700F2B4AF /* STRCharge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STRCharge.m; path = Stripe/STRCharge.m; sourceTree = "<group>"; };
-		A473E31215EA92B000F2B4AF /* STRCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STRCard.h; path = Stripe/STRCard.h; sourceTree = "<group>"; };
-		A473E31315EA92B000F2B4AF /* STRCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STRCard.m; path = Stripe/STRCard.m; sourceTree = "<group>"; };
-		A473E31515EA92BF00F2B4AF /* STRCustomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STRCustomer.h; path = Stripe/STRCustomer.h; sourceTree = "<group>"; };
-		A473E31615EA92BF00F2B4AF /* STRCustomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STRCustomer.m; path = Stripe/STRCustomer.m; sourceTree = "<group>"; };
-		A473E31915EA92DF00F2B4AF /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
-		A473E31A15EA92DF00F2B4AF /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
-		A473E31B15EA92DF00F2B4AF /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		A473E31C15EA92DF00F2B4AF /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		A473E31D15EA92DF00F2B4AF /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
-		A473E31E15EA92DF00F2B4AF /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
-		A473E31F15EA92DF00F2B4AF /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
-		A473E32015EA92DF00F2B4AF /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
-		A473E32115EA92DF00F2B4AF /* AFJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONUtilities.h; sourceTree = "<group>"; };
-		A473E32215EA92DF00F2B4AF /* AFJSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONUtilities.m; sourceTree = "<group>"; };
-		A473E32315EA92DF00F2B4AF /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		A473E32415EA92DF00F2B4AF /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		A473E32515EA92DF00F2B4AF /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		A473E32615EA92DF00F2B4AF /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
-		A473E32715EA92DF00F2B4AF /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
-		A473E32815EA92DF00F2B4AF /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		A473E32915EA92DF00F2B4AF /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		A473E32A15EA92DF00F2B4AF /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
-		A473E32B15EA92DF00F2B4AF /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
-		A473E32C15EA92DF00F2B4AF /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		A473E32D15EA92DF00F2B4AF /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		A473E36D15EB906D00F2B4AF /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A473E36E15EB906D00F2B4AF /* STRCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRCard.h; sourceTree = "<group>"; };
+		A473E36F15EB906D00F2B4AF /* STRCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRCard.m; sourceTree = "<group>"; };
+		A473E37015EB906D00F2B4AF /* STRCharge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRCharge.h; sourceTree = "<group>"; };
+		A473E37115EB906D00F2B4AF /* STRCharge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRCharge.m; sourceTree = "<group>"; };
+		A473E37215EB906D00F2B4AF /* STRCustomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRCustomer.h; sourceTree = "<group>"; };
+		A473E37315EB906D00F2B4AF /* STRCustomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRCustomer.m; sourceTree = "<group>"; };
+		A473E37415EB906D00F2B4AF /* STRStripeHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRStripeHTTPClient.h; sourceTree = "<group>"; };
+		A473E37515EB906D00F2B4AF /* STRStripeHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRStripeHTTPClient.m; sourceTree = "<group>"; };
 		A482DA3C15E8E055004ED689 /* StripeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StripeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A482DA4015E8E055004ED689 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A482DA4215E8E055004ED689 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A482DA4415E8E055004ED689 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A482DA4015E8E055004ED689 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A482DA4215E8E055004ED689 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A482DA4415E8E055004ED689 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A482DA4815E8E055004ED689 /* StripeDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StripeDemo-Info.plist"; sourceTree = "<group>"; };
 		A482DA4A15E8E055004ED689 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A482DA4C15E8E055004ED689 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A482DA4E15E8E055004ED689 /* StripeDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StripeDemo-Prefix.pch"; sourceTree = "<group>"; };
 		A482DA4F15E8E055004ED689 /* STRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STRAppDelegate.h; sourceTree = "<group>"; };
 		A482DA5015E8E055004ED689 /* STRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STRAppDelegate.m; sourceTree = "<group>"; };
+		FF13FB23C59040ADBB3B824E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,40 +75,13 @@
 				A482DA4115E8E055004ED689 /* UIKit.framework in Frameworks */,
 				A482DA4315E8E055004ED689 /* Foundation.framework in Frameworks */,
 				A482DA4515E8E055004ED689 /* CoreGraphics.framework in Frameworks */,
+				562BF1A7781C4176AA5788F0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A473E2C915E90EA000F2B4AF /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				A473E2E415E9368000F2B4AF /* Charge */,
-				A473E2CF15E90FB700F2B4AF /* Card */,
-				A473E2CB15E90EAD00F2B4AF /* Customer */,
-			);
-			name = Objects;
-			sourceTree = "<group>";
-		};
-		A473E2CB15E90EAD00F2B4AF /* Customer */ = {
-			isa = PBXGroup;
-			children = (
-				A473E31515EA92BF00F2B4AF /* STRCustomer.h */,
-				A473E31615EA92BF00F2B4AF /* STRCustomer.m */,
-			);
-			name = Customer;
-			sourceTree = "<group>";
-		};
-		A473E2CF15E90FB700F2B4AF /* Card */ = {
-			isa = PBXGroup;
-			children = (
-				A473E31215EA92B000F2B4AF /* STRCard.h */,
-				A473E31315EA92B000F2B4AF /* STRCard.m */,
-			);
-			name = Card;
-			sourceTree = "<group>";
-		};
 		A473E2D715E9198B00F2B4AF /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,15 +128,6 @@
 			name = "Loading View";
 			sourceTree = "<group>";
 		};
-		A473E2E415E9368000F2B4AF /* Charge */ = {
-			isa = PBXGroup;
-			children = (
-				A473E30F15EA929700F2B4AF /* STRCharge.h */,
-				A473E31015EA929700F2B4AF /* STRCharge.m */,
-			);
-			name = Charge;
-			sourceTree = "<group>";
-		};
 		A473E2EC15E94A4200F2B4AF /* Customer Charges */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,33 +146,20 @@
 			name = "New Customer Charge";
 			sourceTree = "<group>";
 		};
-		A473E31815EA92DF00F2B4AF /* AFNetworking */ = {
+		A473E36C15EB906D00F2B4AF /* Stripe */ = {
 			isa = PBXGroup;
 			children = (
-				A473E31915EA92DF00F2B4AF /* AFHTTPClient.h */,
-				A473E31A15EA92DF00F2B4AF /* AFHTTPClient.m */,
-				A473E31B15EA92DF00F2B4AF /* AFHTTPRequestOperation.h */,
-				A473E31C15EA92DF00F2B4AF /* AFHTTPRequestOperation.m */,
-				A473E31D15EA92DF00F2B4AF /* AFImageRequestOperation.h */,
-				A473E31E15EA92DF00F2B4AF /* AFImageRequestOperation.m */,
-				A473E31F15EA92DF00F2B4AF /* AFJSONRequestOperation.h */,
-				A473E32015EA92DF00F2B4AF /* AFJSONRequestOperation.m */,
-				A473E32115EA92DF00F2B4AF /* AFJSONUtilities.h */,
-				A473E32215EA92DF00F2B4AF /* AFJSONUtilities.m */,
-				A473E32315EA92DF00F2B4AF /* AFNetworkActivityIndicatorManager.h */,
-				A473E32415EA92DF00F2B4AF /* AFNetworkActivityIndicatorManager.m */,
-				A473E32515EA92DF00F2B4AF /* AFNetworking.h */,
-				A473E32615EA92DF00F2B4AF /* AFPropertyListRequestOperation.h */,
-				A473E32715EA92DF00F2B4AF /* AFPropertyListRequestOperation.m */,
-				A473E32815EA92DF00F2B4AF /* AFURLConnectionOperation.h */,
-				A473E32915EA92DF00F2B4AF /* AFURLConnectionOperation.m */,
-				A473E32A15EA92DF00F2B4AF /* AFXMLRequestOperation.h */,
-				A473E32B15EA92DF00F2B4AF /* AFXMLRequestOperation.m */,
-				A473E32C15EA92DF00F2B4AF /* UIImageView+AFNetworking.h */,
-				A473E32D15EA92DF00F2B4AF /* UIImageView+AFNetworking.m */,
+				A473E36D15EB906D00F2B4AF /* LICENSE */,
+				A473E36E15EB906D00F2B4AF /* STRCard.h */,
+				A473E36F15EB906D00F2B4AF /* STRCard.m */,
+				A473E37015EB906D00F2B4AF /* STRCharge.h */,
+				A473E37115EB906D00F2B4AF /* STRCharge.m */,
+				A473E37215EB906D00F2B4AF /* STRCustomer.h */,
+				A473E37315EB906D00F2B4AF /* STRCustomer.m */,
+				A473E37415EB906D00F2B4AF /* STRStripeHTTPClient.h */,
+				A473E37515EB906D00F2B4AF /* STRStripeHTTPClient.m */,
 			);
-			name = AFNetworking;
-			path = Stripe/AFNetworking;
+			path = Stripe;
 			sourceTree = "<group>";
 		};
 		A482DA3115E8E055004ED689 = {
@@ -244,6 +169,7 @@
 				A482DA4615E8E055004ED689 /* StripeDemo */,
 				A482DA3F15E8E055004ED689 /* Frameworks */,
 				A482DA3D15E8E055004ED689 /* Products */,
+				6B6660A721D04F8B9FB13A32 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,6 +187,7 @@
 				A482DA4015E8E055004ED689 /* UIKit.framework */,
 				A482DA4215E8E055004ED689 /* Foundation.framework */,
 				A482DA4415E8E055004ED689 /* CoreGraphics.framework */,
+				FF13FB23C59040ADBB3B824E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -273,7 +200,7 @@
 				A473E2D815E9199500F2B4AF /* View Controllers */,
 				A473E2DF15E9290D00F2B4AF /* Views */,
 				A473E2D715E9198B00F2B4AF /* Xibs */,
-				A482DA5715E8E060004ED689 /* Stripe */,
+				A473E36C15EB906D00F2B4AF /* Stripe */,
 				A482DA4715E8E055004ED689 /* Supporting Files */,
 			);
 			path = StripeDemo;
@@ -291,25 +218,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A482DA5715E8E060004ED689 /* Stripe */ = {
-			isa = PBXGroup;
-			children = (
-				A473E30B15EA928800F2B4AF /* STRStripeHTTPClient.h */,
-				A473E30C15EA928800F2B4AF /* STRStripeHTTPClient.m */,
-				A473E2C915E90EA000F2B4AF /* Objects */,
-				A482DA5815E8E3B5004ED689 /* Vendor */,
-			);
-			name = Stripe;
-			sourceTree = "<group>";
-		};
-		A482DA5815E8E3B5004ED689 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				A473E31815EA92DF00F2B4AF /* AFNetworking */,
-			);
-			name = Vendor;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -320,6 +228,7 @@
 				A482DA3815E8E055004ED689 /* Sources */,
 				A482DA3915E8E055004ED689 /* Frameworks */,
 				A482DA3A15E8E055004ED689 /* Resources */,
+				4D87ADF5B31B4C56AD6C3D37 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -368,10 +277,28 @@
 				A473E2F715E9546200F2B4AF /* STRNewCustomerChargeViewController.xib in Resources */,
 				A473E2F915E960A200F2B4AF /* StripePublishableKey in Resources */,
 				A473E2FB15E9622C00F2B4AF /* README.md in Resources */,
+				A473E37615EB906D00F2B4AF /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D87ADF5B31B4C56AD6C3D37 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A482DA3815E8E055004ED689 /* Sources */ = {
@@ -384,20 +311,10 @@
 				A473E2E315E9293E00F2B4AF /* STRLoadingView.m in Sources */,
 				A473E2F015E94A6000F2B4AF /* STRCustomerChargesViewController.m in Sources */,
 				A473E2F615E9546200F2B4AF /* STRNewCustomerChargeViewController.m in Sources */,
-				A473E30D15EA928800F2B4AF /* STRStripeHTTPClient.m in Sources */,
-				A473E31115EA929700F2B4AF /* STRCharge.m in Sources */,
-				A473E31415EA92B000F2B4AF /* STRCard.m in Sources */,
-				A473E31715EA92BF00F2B4AF /* STRCustomer.m in Sources */,
-				A473E32E15EA92DF00F2B4AF /* AFHTTPClient.m in Sources */,
-				A473E32F15EA92DF00F2B4AF /* AFHTTPRequestOperation.m in Sources */,
-				A473E33015EA92DF00F2B4AF /* AFImageRequestOperation.m in Sources */,
-				A473E33115EA92DF00F2B4AF /* AFJSONRequestOperation.m in Sources */,
-				A473E33215EA92DF00F2B4AF /* AFJSONUtilities.m in Sources */,
-				A473E33315EA92DF00F2B4AF /* AFNetworkActivityIndicatorManager.m in Sources */,
-				A473E33415EA92DF00F2B4AF /* AFPropertyListRequestOperation.m in Sources */,
-				A473E33515EA92DF00F2B4AF /* AFURLConnectionOperation.m in Sources */,
-				A473E33615EA92DF00F2B4AF /* AFXMLRequestOperation.m in Sources */,
-				A473E33715EA92DF00F2B4AF /* UIImageView+AFNetworking.m in Sources */,
+				A473E37715EB906D00F2B4AF /* STRCard.m in Sources */,
+				A473E37815EB906D00F2B4AF /* STRCharge.m in Sources */,
+				A473E37915EB906D00F2B4AF /* STRCustomer.m in Sources */,
+				A473E37A15EB906D00F2B4AF /* STRStripeHTTPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +383,7 @@
 		};
 		A482DA5515E8E055004ED689 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6660A721D04F8B9FB13A32 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StripeDemo/StripeDemo-Prefix.pch";
@@ -477,6 +395,7 @@
 		};
 		A482DA5615E8E055004ED689 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6660A721D04F8B9FB13A32 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StripeDemo/StripeDemo-Prefix.pch";
