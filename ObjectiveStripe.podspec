@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "Wrapper for Stripe API."
   s.homepage     = "https://github.com/reddavis/Objective-Stripe"
-  s.license  = 'MIT'
+  s.license  = 'MIT', {:file => 'LICENSE'}
   s.author       = { "Red" => "red@riothq.com" }
   s.source       = { :git => "https://github.com/reddavis/Objective-Stripe.git", :tag => "0.0.1" }
   s.ios.deployment_target = '5.0'
