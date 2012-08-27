@@ -129,6 +129,17 @@ static NSString *const KSTRChargesRootPath = @"charges";
 - (void)createCharge:(NSNumber *)amount forCustomerWithID:(NSString *)customerID details:(NSString *)details success:(void (^)(STRCharge *))success failure:(void (^)(NSError *))failure {
     
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:amount, @"amount", customerID, @"customer", details, @"description", @"usd", @"currency", nil];
+    [self createCharge:amount params:params success:^(STRCharge *charge) {
+       
+        success(charge);
+    } failure:^(NSError *error) {
+        
+        failure(error);
+    }];
+}
+
+- (void)createCharge:(NSNumber *)amount params:(NSDictionary *)params success:(void (^)(STRCharge *))success failure:(void (^)(NSError *))failure {
+    
     [self postPath:KSTRChargesRootPath parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSError *JSONReadingError = nil;
