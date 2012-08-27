@@ -106,8 +106,14 @@
     }
     
     STRCharge *charge = [self.charges objectAtIndex:indexPath.row];
-    cell.textLabel.text = charge.details;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@%@", charge.currency, charge.amount];
+    
+    NSString *labelText = charge.details;
+    if (charge.refunded) {
+        labelText = [labelText stringByAppendingString:@" (refunded)"];
+    }
+    
+    cell.textLabel.text = labelText;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %.2f", charge.currency, charge.amount.floatValue/100];
     
     return cell;
 }
@@ -115,7 +121,35 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    STRCharge *charge = [self.charges objectAtIndex:indexPath.row];
+    return !charge.refunded;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    STRCharge *charge = [self.charges objectAtIndex:indexPath.row];
+    STRStripeHTTPClient *client = [STRStripeHTTPClient sharedClient];
+    [client refundCharge:charge success:^(STRCharge *charge) {
+        
+        NSMutableArray *mutableChargesArray = [NSMutableArray arrayWithArray:self.charges];
+        [mutableChargesArray replaceObjectAtIndex:indexPath.row withObject:charge];
+        self.charges = [NSArray arrayWithArray:mutableChargesArray];
+        
+        [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    } failure:^(NSError *error) {
+        
+        NSLog(@"%@", error);
+    }];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return @"Refund";
 }
 
 @end

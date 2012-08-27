@@ -20,7 +20,7 @@
 static NSString *kSTRStripeAPIKey = nil;
 static NSString *const kSTRStripeBaseURL = @"https://api.stripe.com/v1/";
 static NSString *const KSTRGetCustomersPath = @"customers";
-static NSString *const KSTRGetChargesRootPath = @"charges";
+static NSString *const KSTRChargesRootPath = @"charges";
 
 
 @implementation STRStripeHTTPClient
@@ -84,7 +84,7 @@ static NSString *const KSTRGetChargesRootPath = @"charges";
 
 - (void)fetchChargesWithParams:(NSDictionary *)params success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure {
     
-    [self getPath:KSTRGetChargesRootPath parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [self getPath:KSTRChargesRootPath parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSError *JSONReadingError = nil;
         id JSON = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:&JSONReadingError];
@@ -129,7 +129,23 @@ static NSString *const KSTRGetChargesRootPath = @"charges";
 - (void)createCharge:(NSNumber *)amount forCustomerWithID:(NSString *)customerID details:(NSString *)details success:(void (^)(STRCharge *))success failure:(void (^)(NSError *))failure {
     
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:amount, @"amount", customerID, @"customer", details, @"description", @"usd", @"currency", nil];
-    [self postPath:KSTRGetChargesRootPath parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [self postPath:KSTRChargesRootPath parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSError *JSONReadingError = nil;
+        id JSON = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:&JSONReadingError];
+        STRCharge *charge = [[STRCharge alloc] initWithDictionary:JSON];
+        
+        success(charge);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        failure(error);
+    }];
+}
+
+- (void)refundCharge:(STRCharge *)charge success:(void (^)(STRCharge *))success failure:(void (^)(NSError *))failure {
+    
+    NSString *refundPath = [NSString stringWithFormat:@"%@/%@/refund", KSTRChargesRootPath, charge.identifier];
+    [self postPath:refundPath parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSError *JSONReadingError = nil;
         id JSON = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:&JSONReadingError];
